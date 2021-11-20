@@ -16,7 +16,7 @@ apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev \
 # Download Python source code using the following command from python official site. You can also download the latest version in place of the specified below.
 
 # cd /opt
-sudo wget https://www.python.org/ftp/python/${python_version}/Python-${python_version}.tgz
+wget https://www.python.org/ftp/python/${python_version}/Python-${python_version}.tgz
 # Then extract the downloaded source archive file
 tar xzf Python-${python_version}.tgz
 
