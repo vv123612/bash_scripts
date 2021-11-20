@@ -1,7 +1,20 @@
+#!/bin/bash
+# if set first argument then install python that version, else default 3.9.6
 # https://tecadmin.net/install-python-3-8-ubuntu/
 
+
 python_version="3.9.6"
-python_version_short="3.9"
+
+# check first command argument
+# if first command argument is empty, then install default value 3.9.6
+if [ -n "$1" ]              
+then
+ echo "Параметр #1: $1"     
+ python_version=$1
+fi
+
+python_version_senior=${python_version:0:3}
+# python_version_short="3.9"
 # wget "https://www.python.org/ftp/python/${python_version}/Python-${python_version}.tgz"
 
 
@@ -32,7 +45,7 @@ make altinstall
 # Step 4 – Check Python Version
 # Check the installed version of python using the following command. As you have not overwritten the default Python version on the system, So you have to use Python 3.8 as follows:
 
-python{python_version_short} -V
+python{python_version_senior} -V
 
 # Python-3.8.12
 # After successful installation remove the downloaded archive to save disk space
