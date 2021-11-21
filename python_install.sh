@@ -45,7 +45,7 @@ make altinstall
 # Step 4 – Check Python Version
 # Check the installed version of python using the following command. As you have not overwritten the default Python version on the system, So you have to use Python 3.8 as follows:
 
-python{python_version_senior} -V
+python{$python_version_senior} -V
 
 # Python-3.8.12
 # After successful installation remove the downloaded archive to save disk space
