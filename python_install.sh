@@ -13,7 +13,7 @@ then
  python_version=$1
 fi
 
-python_version_senior=python${python_version:0:3}
+python_senior2=python${python_version:0:3}
 # python_version_short="3.9"
 # wget "https://www.python.org/ftp/python/${python_version}/Python-${python_version}.tgz"
 
@@ -45,7 +45,7 @@ make altinstall
 # Step 4 – Check Python Version
 # Check the installed version of python using the following command. As you have not overwritten the default Python version on the system, So you have to use Python 3.8 as follows:
 
-${python_version_senior} -V
+${python_senior2} -V
 
 # Python-3.8.12
 # After successful installation remove the downloaded archive to save disk space
