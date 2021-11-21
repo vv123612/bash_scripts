@@ -13,7 +13,7 @@ then
  python_version=$1
 fi
 
-python_version_senior=${python_version:0:3}
+python_version_senior=python${python_version:0:3}
 # python_version_short="3.9"
 # wget "https://www.python.org/ftp/python/${python_version}/Python-${python_version}.tgz"
 
@@ -50,5 +50,5 @@ python{python_version_senior} -V
 # Python-3.8.12
 # After successful installation remove the downloaded archive to save disk space
 
-cd /opt
+# cd /opt
 rm -f Python-${python_version}.tgz
