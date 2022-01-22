@@ -1,7 +1,4 @@
 #https://losst.ru/istoriya-komand-linux
-#vim ~/.bashrc
-
-
 
 #########################################################################
 #settings for virtualwrapper
@@ -16,7 +13,24 @@ source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 
 
 #########################################################################
+#aliases
+alias h='history'
+alias d='docker'
+
+if [ -f ~/.my/docker_aliases.sh ]; then
+    source ~/.my/docker_aliases.sh
+fi
+
+
+#########################################################################
+
+
+
+
+#########################################################################
 #history settings
+#vim ~/.bashrc
+
 #common history
 export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r;"
 
