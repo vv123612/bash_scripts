@@ -7,6 +7,6 @@ do
   git add .
   git commit -m "$i"
 
-  git branch "b$i"
+  #git branch "b$i"
 
 done
