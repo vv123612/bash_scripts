@@ -1,4 +1,4 @@
-sudo apt update                                                                                                                          
+sudo apt update
 
 sudo apt install perl gcc make
 sudo ./VBoxLinuxAdditions.run 
@@ -43,15 +43,10 @@ twm &
 jobs
 Xnest :1 -listen tcp
 
-htop
-olwm
-
 mwm &
 sudo apt install mwm
 mwm &
 # kill -9 &mwm
-
-mwm &
 
 sudo apt install icewm
 icewm-session &
@@ -79,3 +74,15 @@ DISPLAY=:0 Xephyr :3 -listen tcp &
 startkde
 
 
+
+
+
+sudo apt update
+sudo apt install -y \
+    xnest xserver-xephyr \
+    twm mwm icewm gnome-session-bin\
+    xterm
+
+
+
+lxqt-session
