@@ -1,0 +1,7 @@
+firstName       lastName        age     city       ID   department
+
+Thomas          Shelby          30      Rio        400  IT
+Omega           Night           45      Ontario    600  Design
+Wood            Tinker          54      Lisbon     N/A  IT
+Giorgos         Georgiou        35      London     300  Data
+Timmy           Turner          32      Berlin     N/A  Engineering
